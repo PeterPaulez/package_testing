@@ -20,8 +20,8 @@ class DosPage extends StatelessWidget {
             RouteTransitions(
               context: context,
               child: UnoPage(),
-              animation: AnimationType.fafeIn,
-              duration: Duration(milliseconds: 2000),
+              animation: AnimationType.fadeIn,
+              duration: Duration(milliseconds: 200),
               replacement: true,
             );
           },

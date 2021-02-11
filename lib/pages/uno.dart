@@ -1,7 +1,7 @@
+import 'package:custom_route_transition/helpers/transition.dart';
 import 'package:flutter/material.dart';
 
 import 'package:custom_route_transition/pages/dos.dart';
-import 'package:custom_route_transition_peterpaulez/custom_route_transition_peterpaulez.dart';
 
 class UnoPage extends StatelessWidget {
   @override
@@ -21,9 +21,10 @@ class UnoPage extends StatelessWidget {
             RouteTransitions(
               context: context,
               child: DosPage(),
-              animation: AnimationType.fafeIn,
-              duration: Duration(milliseconds: 500),
+              animation: AnimationType.slideTop,
+              duration: Duration(milliseconds: 1000),
               replacement: true,
+              curveType: CurveType.bounce,
             );
           },
           color: Colors.white,
